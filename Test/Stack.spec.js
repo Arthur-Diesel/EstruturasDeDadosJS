@@ -37,4 +37,12 @@ describe('Stack', () => {
         assert.strictEqual(stack.isEmpty(), false);
     })
 
+    it('Stack Clear!', () => {
+        const stack = new Stack();
+        stack.push(0);
+        stack.push(5);
+        stack.clear();
+        assert.strictEqual(stack.isEmpty(), true);
+    })
+
 })
