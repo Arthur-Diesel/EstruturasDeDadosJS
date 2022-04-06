@@ -40,6 +40,6 @@ describe('QueueArray', () => {
         const queue = new QueueArray();
         queue.enqueue('Arthur');
         queue.enqueue('Diesel');
-        assert.strictEqual(queue.toString(), 'Arthur Diesel')
+        assert.strictEqual(queue.toString(), 'Arthur, Diesel')
     })
 })

@@ -26,7 +26,7 @@ class QueueArray {
         this._items = [];
     }
     toString(){
-        return this._items.join(' ');
+        return this._items.join(', ');
     }
 }
 
