@@ -1,7 +1,7 @@
-import { defaultEquals } from '../Util/DefaultEquals'
-import { Node } from '../Models/Node'
+const { defaultEquals } = require('../Util/DefaultEquals')
+const { Node } = require('../Models/Node')
 
-export default class LinkedList {
+class LinkedList {
     constructor(equalsFn = defaultEquals){
         this.count = 0
         this.head = undefined
@@ -107,4 +107,8 @@ export default class LinkedList {
         }
         return objString
     }
+}
+
+module.exports = {
+    LinkedList
 }

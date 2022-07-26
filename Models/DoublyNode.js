@@ -1,8 +1,12 @@
-import { Node } from "./Node";
+const { Node } = require("./Node");
 
-export class DoublyNode extends Node {
+class DoublyNode extends Node {
     constructor(element, next, prev) {
         super(element, next)
         this.prev = prev
     }
+}
+
+module.exports = {
+    DoublyNode
 }

@@ -1,8 +1,8 @@
-import LinkedList from "../LinkedList/LinkedList";
-import { DoublyNode } from "../Models/DoublyNode";
-import { defaultEquals } from "../Util/DefaultEquals";
+const { LinkedList } = require ("../LinkedList/LinkedList");
+const { DoublyNode } = require ("../Models/DoublyNode");
+const { defaultEquals } = require ("../Util/DefaultEquals");
 
-export class DoublyLinkedList extends LinkedList {
+class DoublyLinkedList extends LinkedList {
     constructor(equalsFn = defaultEquals) {
         super(equalsFn)
         this.tail = undefined
@@ -63,4 +63,8 @@ export class DoublyLinkedList extends LinkedList {
         }
         return undefined
     }
+}
+
+module.exports = {
+    DoublyLinkedList
 }

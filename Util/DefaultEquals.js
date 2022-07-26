@@ -1,3 +1,7 @@
-export function defaultEquals(a, b){
+function defaultEquals(a, b){
     return a === b
+}
+
+module.exports = {
+    defaultEquals
 }
